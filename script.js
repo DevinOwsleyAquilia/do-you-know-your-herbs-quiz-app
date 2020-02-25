@@ -1,4 +1,20 @@
 //step one: define functions and objects
+const imgStore = [
+    {
+      question: 'Rosemary',
+      answers: [
+        'lemongrass_on_woven_wicker_mat.jpg',
+        'thyme_bunch.jpg',
+        'cilantro_bunch.jpg',
+        'fine_green_fennel.jpg',
+        'rosemary_bunch.jpg',
+        'oregano_plant_close_up.jpg'
+      ],
+      correctAnswer:
+      'rosemary_bunch.jpg'
+    }
+];
+
 const STORE = [
     {
       question: 'Rosemary',
@@ -53,7 +69,7 @@ const STORE = [
       correctAnswer: '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>'
     },
     {
-        question: 'Oregano', //START AGAIN HERE
+        question: 'Oregano', 
         answers: [
           '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>',
           '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',

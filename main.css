@@ -36,7 +36,20 @@ Header styles (Main Module)
 Content styles (Main Module)
 (all the styles inside the < sections > or < aside > tags)
 */
+section.questions ul.options {
+    display: block;
+    width: 100%;
+}
+section.questions ul.options li {
+    display: inline-block;
+    width: 32%;
+    padding: 1%;
+}
+section.questions ul.options li img {
+    width: 100%;
+    border: 1px solid black;
 
+}
 
 /* -------------------------------------
 Footer styles (Main Module)

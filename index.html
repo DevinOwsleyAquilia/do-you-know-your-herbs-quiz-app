@@ -1,22 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <header></header>
-    <section></section>
-    <section></section>
-    <section></section>
-    <footer></footer>
 
- <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-  <script src="script.js"></script>  
+<body>
+    <header>
+        <h1>Herbs Quiz</h1>
+    </header>
+    <section class="intro">
+        <h2>Something exciting about this quiz</h2>
+        <button>Start</button>
+    </section>
+    <section class="questions">
+        <h3 class="question-text">Rosemary</h3>
+        <form class="questions-form">
+            <ul class="options">
+                <li>
+                    <label class="options-label" for="0">
+                        <input class="radio" type="radio" id="0" value="0" name="answer" required>
+                        <img src="herbs-photos/rosemary_bunch.jpg" alt="rosemary_bunch">
+                    </label>
+                </li>
+                <li>
+                    <label class="options-label" for="1">
+                        <input class="radio" type="radio" id="1" value="1" name="answer" required>
+                        <img src="herbs-photos/oregano_plant_close_up.jpg" alt="oregano_plant_close_up">
+                    </label>
+                </li>
+                <li>
+                    <label class="options-label" for="2">
+                        <input class="radio" type="radio" id="2" value="2" name="answer" required>
+                        <img src="herbs-photos/thyme_bunch.jpg" alt="thyme_bunch">
+                    </label>
+                </li>
+            </ul>
+            <button type="submit">Check Answer</button>
+        </form>
+    </section>
+    <section class="feedback">
+        <div class="success">
+            <h3>Well done</h3>
+        </div>
+        <div class="failure">
+            <h3>Wrong Answer</h3>
+            <h4>The correct answer is...</h4>
+        </div>
+        <button>Next Question</button>
+    </section>
+    <section class="results">
+        <h2>Final Score is</h2>
+        <button>Restart Quiz</button>
+    </section>
+    <footer>Copyright Devin Owsley-Aquilia 2020</footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
