@@ -1,114 +1,131 @@
 //step one: define functions and objects
 const STORE = [
     {
-      question: 'How does the male Capuchin monkey attract a female partner?',
+      question: 'Rosemary',
       answers: [
-        'He hangs upside-down from a high tree branch and bellows loudly',
-        'He gathers ripe fruit into a pile and repeatedly throws it up in the air while rapidly screeching',
-        'He urinates in his hands and rubs it thoroughly into his fur',
-        'He cruises around in the coolest looking car made from coconuts, bamboo, and greenery'
+        '<img src="746002739_ea1e309466_o.jpg" alt="Lemongrass on woven wicker mat" width="500" height="600"></img>',
+        '<img src="thyme-2854035_1920.jpg alt="Thyme bunch" width="500" height="600"></img>',
+        '<img src="cilantro-1287301_1920.jpg" alt="Cilantro bunch close up" width="500" height="600"></img>',
+        '<img src="fine-green-fennel.jpg" alt="fine green fennel" width="500" height="600"></img>',
+        '<img src="rosemary-74365_1280.jpg" alt="Rosemary bunch" width="500" height="600"></img>',
+        '<img src="oregano-790702_1920.jpg" alt="Oregano plant close up" width="500" height="600"></img>'
+
       ],
       correctAnswer:
-        'He urinates in his hands and rubs it thoroughly into his fur'
+      '<img src="rosemary-74365_1280.jpg" alt="Rosemary bunch" width="500" height="600"></img>'
+    },
+    {
+      question: 'Mint',
+      answers: [
+        '<img src="tarragon-74234_640.jpg" alt="Tarragon bunch" width="500" height="600"></img>',
+        '<img src="1676377622_bc60a434c9_b.jpg" alt="Mint in a bowl in kitchen sink" width="500" height="600"></img>',
+        '<img src="2590108006_3a716331e3_b.jpg" alt="garlic scape bunch close up" width="500" height="600"></img>',
+        '<img src="4534777750_c33586422e_k.jpg" alt="Basil plant close up" width="500" height="600"></img>',
+        '<img src="flat-leaf-parsley.jpg" alt="flat leaf parsley" width="500" height="600"></img>',
+        '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>'
+      ],
+      correctAnswer:
+      '<img src="1676377622_bc60a434c9_b.jpg" alt="Mint in a bowl in kitchen sink" width="500" height="600"></img>'
     },
     {
       question:
-        'What makes the female spider monkey different from all other primates?',
+        'Tarragon',
       answers: [
-        'She has the meanest dance moves, often being cited as the inspiration to such dancers as Michael Jackson, Shakira, and even Justin Timberlake',
-        'She has the longest tail, reaching up to three feet in length',
-        'She has seven (and sometimes even eight) different colors on her face',
-        'She eats the second born baby when she gives birth to twins'
+        '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
+        '<img src="5620131626_64f1c38015_k.jpg" alt="Cilantro on a white background" width="500" height="600"></img>',
+        '<img src="sprig-of-fennel.jpg" alt="Sprig of fennel" width="500" height="600"></img>',
+        '<img src="pxfuel.com.jpg" alt="Sage fan displayed" width="500" height="600"></img>',
+        '<img src="basil-3532424_1920.jpg" alt="Basil on black background" width="500" height="600"></img>',
+        '<img src="lemongrass-4479786_1920.jpg" alt="fresh lemongrass" width="500" height="600"></img>'    
       ],
-      correctAnswer:
-        'She has the longest tail, reaching up to three feet in length'
+      correctAnswer: '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>'
     },
     {
-      question:
-        'Out of all the New World monkeys, the owl monkey is the only one to:',
+      question: 'Sage',
       answers: [
-        'Stay up all night, having a nocturnal sleep schedule',
-        'Consistently hoot as a mating call',
-        'Have the ability to turn its head all the way around',
-        'Throw the wildest and loudest parties'
+        '<img src="mint-2202496_1920.jpg" alt="bunch of mint" width="500" height="600"></img>',
+        '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>',
+        '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
+        '<img src="oregano-3506914_1920.jpg" alt="Oregano bunch" width="500" height="600"></img>',
+        '<img src="30936352597_64958374a4_k.jpg" alt="Parsely close up" width="500" height="600"></img>',
+        '<img src="thyme-2854035_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
       ],
-      correctAnswer: 'Stay up all night, having a nocturnal sleep schedule'
+      correctAnswer: '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>'
     },
     {
-      question: 'Which New World monkey is the most intelligent?',
-      answers: [
-        'The tamarin monkey',
-        'The brass monkey (that funky monkey)',
-        'The baboon monkey',
-        'The capuchin monkey'
-      ],
-      correctAnswer: 'The capuchin monkey'
-    },
-    {
-      question:
-        'Picking out parasites and dirts from each others’ furs is a way for monkeys to:',
-      answers: [
-        'Show honor to their elders, respect for alpha males, and to prepare for the heat of summer',
-        'Get rid of bugs and dirt cause all that stuff is yucky!',
-        'Communicate, form social hierarchies, and strengthen family and friendship bonds',
-        'Find a quick source of sustenance and show interest in mating'
-      ],
-      correctAnswer:
-        'Communicate, form social hierarchies, and strengthen family and friendship bonds'
-    },
-    {
-      question: 'The pygmy marmoset is:',
-      answers: [
-        'The world’s fastest monkey',
-        'The world’s smallest monkey',
-        'The galaxy’s most fashionable living being. Period.',
-        'Allergic to bananas'
-      ],
-      correctAnswer: 'The world’s smallest monkey'
-    },
-    {
-      question:
-        'What is a prominent difference between Old and New World monkeys?',
-      answers: [
-        'New World monkeys build houses out of mud — Old World monkeys live in caves',
-        'New World monkeys gonna’ love you long time — Old World monkeys would do anything for love (but they won’t do that…)',
-        'New World monkeys have backward, non opposable thumbs — Old World monkeys have two opposable thumbs on each hand and foot',
-        'New World monkeys have 36 teeth — Old World monkeys have 32 teeth'
-      ],
-      correctAnswer:
-        'New World monkeys have 36 teeth — Old World monkeys have 32 teeth'
-    },
-    {
-      question: 'The male howler monkey:',
-      answers: [
-        'Is the strongest New World monkey and can lift up to ten times his own weight',
-        'Has the loudest call of any primate and is one of the loudest animals in the world',
-        'Sleeps in the blood of its enemies',
-        'Has the most beautiful singing voice that one might never hear'
-      ],
-      correctAnswer:
-        'Has the loudest call of any primate and is one of the loudest animals in the world'
-    },
-    {
-      question: 'What type of environments do New World monkeys live in?',
-      answers: [
-        'Mountain caves',
-        'Country farmlands',
-        'Tropical forests',
-        'Bustling cities'
-      ],
-      correctAnswer: 'Tropical forests'
-    },
-    {
-      question:
-        'How do squirrel monkeys mark their path when they are moving through the treetops?',
-      answers: [
-        'They tie a spool of thread to the first tree they climb and let it unravel as they go',
-        'They spread urine on their hands and feet',
-        'They drop pieces of candy after every couple of yards',
-        'They record their travel path using GPS location through a “running app” on their cell phones'
-      ],
-      correctAnswer: 'They spread urine on their hands and feet'
-    }
+        question: 'Oregano', //START AGAIN HERE
+        answers: [
+          '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>',
+          '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
+          '<img src="mint-2202496_1920.jpg" alt="bunch of mint" width="500" height="600"></img>',
+          '<img src="oregano-790702_1920.jpg" alt="Wild Oregano" width="500" height="600"></img>',
+          '<img src="2590108006_3a716331e3_b.jpg" alt="scapes bunch" width="500" height="600"></img>',
+          '<img src="thyme-341930_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
+        ],
+        correctAnswer: '<img src="oregano-790702_1920.jpg" alt="Wild Oregano" width="500" height="600"></img>'
+      }, 
+      {
+        question: 'Parsely',
+        answers: [
+          '<img src="7717620242_f68959c31d_k.jpg" alt="fresh cut chives" width="500" height="600"></img>',
+          '<img src="flat-leaf-parsley.jpg" alt="wild parsley" width="500" height="600"></img>',
+          '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
+          '<img src="oregano-790702_1920.jpg" alt="Wild Oregano" width="500" height="600"></img>',
+          '<img src="30936352597_64958374a4_k.jpg" alt="Parsely close up" width="500" height="600"></img>',
+          '<img src="thyme-2854035_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
+        ],
+          correctAnswer: 
+          '<img src="flat-leaf-parsley.jpg" alt="wild parsley" width="500" height="600"></img>'
+      }, 
+      {
+        question: 'Basil',
+        answers: [
+          '<img src="oregano-790702_1920.jpg" alt="bunch of oregano" width="500" height="600"></img>',
+          '<img src="lemongrass-4479786_1920.jpg" alt="fresh lemongrass" width="500" height="600"></img>',
+          '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
+          '<img src="32427867677_64da1e1f82_k.jpg" alt="fresh thyme" width="500" height="600"></img>',
+          '<img src="basil-3532424_1920.jpg" alt="Basil on black background" width="500" height="600"></img>',
+          '<img src="mint-2202496_1920.jpg" alt="mint bunch" width="500" height="600"></img>'
+        ],
+        correctAnswer: '<img src="basil-3532424_1920.jpg" alt="Basil on black background" width="500" height="600"></img>'
+      },
+      {
+        question: 'Cilantro',
+        answers: [
+          '<img src="cilantro-1287301_1920.jpg" alt="bunch of Cilantro" width="500" height="600"></img>',
+          '<img src="sage-leaves-background.jpg" alt="wild sage background" width="500" height="600"></img>',
+          '<img src="1676377622_bc60a434c9_b.jpg" mint" width="500" height="600"></img>',
+          '<img src="oregano-790702_1920.jpg" alt="Wild Oregano" width="500" height="600"></img>',
+          '<img src="30936352597_64958374a4_k.jpg" alt="Parsely close up" width="500" height="600"></img>',
+          '<img src="thyme-2854035_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
+        ],
+        correctAnswer: '<img src="cilantro-1287301_1920.jpg" alt="bunch of Cilantro" width="500" height="600"></img>'
+      }, 
+      {
+        question: 'Fennel',
+        answers: [
+          '<img src="9031346136_08e079f996_k.jpg" alt="Cut Cilantro" width="500" height="600"></img>',
+          '<img src="thyme-2854035_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
+          '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>',
+          '<img src="fennel-3946005_1920.jpg" alt="Fennel in the ground" width="500" height="600"></img>',
+          '<img src="oregano-790702_1920.jpg" alt="Wild Oregano" width="500" height="600"></img>',
+          '<img src="basil-2919560_1920.jpg" alt="Basil" width="500" height="600"></img>',
+          
+        ],
+          correctAnswer: '<img src="fennel-3946005_1920.jpg" alt="Fennel in the ground" width="500" height="600"></img>'
+
+        },
+        {
+            question: 'Scapes',
+            answers: [
+              '<img src="oregano-790702_1920.jpg" alt="bunch of oregano" width="500" height="600"></img>',
+              '<img src="lemongrass-4479786_1920.jpg" alt="fresh lemongrass" width="500" height="600"></img>',
+              '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
+              '<img src="2590108006_3a716331e3_b.jpg" alt="Scapes" width="500" height="600"></img>',
+              '<img src="mint-2202496_1920.jpg" alt="mint bunch" width="500" height="600"></img>',
+              '<img src="thyme-341930_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
+            ],
+            correctAnswer: '<img src="2590108006_3a716331e3_b.jpg" alt="Scapes" width="500" height="600"></img>'
+          },
   ];
 //Step two: use functions and objects (triggers)
