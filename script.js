@@ -1,147 +1,129 @@
 //step one: define functions and objects
-const imgStore = [
-    {
-      question: 'Rosemary',
-      answers: [
-        'lemongrass_on_woven_wicker_mat.jpg',
-        'thyme_bunch.jpg',
-        'cilantro_bunch.jpg',
-        'fine_green_fennel.jpg',
-        'rosemary_bunch.jpg',
-        'oregano_plant_close_up.jpg'
-      ],
-      correctAnswer:
-      'rosemary_bunch.jpg'
-    }
-];
 
 const STORE = [
     {
-      question: 'Rosemary',
-      answers: [
-        '<img src="746002739_ea1e309466_o.jpg" alt="Lemongrass on woven wicker mat" width="500" height="600"></img>',
-        '<img src="thyme-2854035_1920.jpg alt="Thyme bunch" width="500" height="600"></img>',
-        '<img src="cilantro-1287301_1920.jpg" alt="Cilantro bunch close up" width="500" height="600"></img>',
-        '<img src="fine-green-fennel.jpg" alt="fine green fennel" width="500" height="600"></img>',
-        '<img src="rosemary-74365_1280.jpg" alt="Rosemary bunch" width="500" height="600"></img>',
-        '<img src="oregano-790702_1920.jpg" alt="Oregano plant close up" width="500" height="600"></img>'
-
-      ],
-      correctAnswer:
-      '<img src="rosemary-74365_1280.jpg" alt="Rosemary bunch" width="500" height="600"></img>'
-    },
+        question: 'Rosemary',
+        answers: [
+          'lemongrass_on_woven_wicker_mat.jpg',
+          'thyme_bunch.jpg',
+          'cilantro_bunch.jpg',
+          'fine_green_fennel.jpg',
+          'rosemary_bunch.jpg',
+          'oregano_plant_close_up.jpg'
+        ],
+        correctAnswer: 'rosemary_bunch.jpg'
+      },
     {
       question: 'Mint',
       answers: [
-        '<img src="tarragon-74234_640.jpg" alt="Tarragon bunch" width="500" height="600"></img>',
-        '<img src="1676377622_bc60a434c9_b.jpg" alt="Mint in a bowl in kitchen sink" width="500" height="600"></img>',
-        '<img src="2590108006_3a716331e3_b.jpg" alt="garlic scape bunch close up" width="500" height="600"></img>',
-        '<img src="4534777750_c33586422e_k.jpg" alt="Basil plant close up" width="500" height="600"></img>',
-        '<img src="flat-leaf-parsley.jpg" alt="flat leaf parsley" width="500" height="600"></img>',
-        '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>'
+        'tarragon_bunch_1.jpg',
+        'mint_in_a_bowl_kitchen_sink.jpg',
+        'garlic_scapes_up_close.jpg',
+        'basil_plant_closeup.jpg',
+        'flat_leaf_parsley.jpg',
+        'sage_bundle.jpg'
       ],
-      correctAnswer:
-      '<img src="1676377622_bc60a434c9_b.jpg" alt="Mint in a bowl in kitchen sink" width="500" height="600"></img>'
+      correctAnswer: 'mint_in_a_bowl_kitchen_sink.jpg'   
     },
     {
       question:
         'Tarragon',
       answers: [
-        '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
-        '<img src="5620131626_64f1c38015_k.jpg" alt="Cilantro on a white background" width="500" height="600"></img>',
-        '<img src="sprig-of-fennel.jpg" alt="Sprig of fennel" width="500" height="600"></img>',
-        '<img src="pxfuel.com.jpg" alt="Sage fan displayed" width="500" height="600"></img>',
-        '<img src="basil-3532424_1920.jpg" alt="Basil on black background" width="500" height="600"></img>',
-        '<img src="lemongrass-4479786_1920.jpg" alt="fresh lemongrass" width="500" height="600"></img>'    
+        'tarragon_3.jpg',
+        'cilantro_closeup_on_white_background.jpg',
+        'sprig_of_fennel.jpg',
+        'sage_fan_display.jpg',
+        'basil_on_black_background.jpg',
+        'fresh_lemongrass.jpg'    
       ],
-      correctAnswer: '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>'
+      correctAnswer: 'tarragon_3.jpg'
     },
     {
       question: 'Sage',
       answers: [
-        '<img src="mint-2202496_1920.jpg" alt="bunch of mint" width="500" height="600"></img>',
-        '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>',
-        '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
-        '<img src="oregano-3506914_1920.jpg" alt="Oregano bunch" width="500" height="600"></img>',
-        '<img src="30936352597_64958374a4_k.jpg" alt="Parsely close up" width="500" height="600"></img>',
-        '<img src="thyme-2854035_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
+        'mint_bundle.jpg',
+        'sage_bundle.jpg',
+        'wild_tarragon_2_stems.jpg',
+        'oregano_wild_bunch.jpg',
+        'parsley_close_up_from_top.jpg',
+        'fresh_thyme_front_view_closeup.jpg',
       ],
-      correctAnswer: '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>'
+      correctAnswer: 'sage_bundle.jpg'
     },
     {
         question: 'Oregano', 
         answers: [
-          '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>',
-          '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
-          '<img src="mint-2202496_1920.jpg" alt="bunch of mint" width="500" height="600"></img>',
-          '<img src="oregano-790702_1920.jpg" alt="Wild Oregano" width="500" height="600"></img>',
-          '<img src="2590108006_3a716331e3_b.jpg" alt="scapes bunch" width="500" height="600"></img>',
-          '<img src="thyme-341930_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
+          'sage_bundle.jpg',
+          'wild_tarragon_2_stems.jpg',
+          'mint_bundle.jpg',
+          'oregano_plant.jpg',
+          'garlic_scapes_on_black_table.jpg',
+          'thyme_bush.jpg',
         ],
-        correctAnswer: '<img src="oregano-790702_1920.jpg" alt="Wild Oregano" width="500" height="600"></img>'
+        correctAnswer: 'oregano_plant.jpg'
       }, 
       {
-        question: 'Parsely',
+        question: 'Parsley',
         answers: [
-          '<img src="7717620242_f68959c31d_k.jpg" alt="fresh cut chives" width="500" height="600"></img>',
-          '<img src="flat-leaf-parsley.jpg" alt="wild parsley" width="500" height="600"></img>',
-          '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
-          '<img src="oregano-790702_1920.jpg" alt="Wild Oregano" width="500" height="600"></img>',
-          '<img src="30936352597_64958374a4_k.jpg" alt="Parsely close up" width="500" height="600"></img>',
-          '<img src="thyme-2854035_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
+          'bunch_chives.jpg',
+          'flat_leaf_parsley.jpg',
+          'tarragon_3.jpg',
+          'oregano_wild_bunch.jpg',
+          'garlic_scapes_on_black_table.jpg',
+          'fresh_thyme_front_view_closeup.jpg',
         ],
           correctAnswer: 
-          '<img src="flat-leaf-parsley.jpg" alt="wild parsley" width="500" height="600"></img>'
+          'flat_leaf_parsley.jpg'
       }, 
       {
         question: 'Basil',
         answers: [
-          '<img src="oregano-790702_1920.jpg" alt="bunch of oregano" width="500" height="600"></img>',
-          '<img src="lemongrass-4479786_1920.jpg" alt="fresh lemongrass" width="500" height="600"></img>',
-          '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
-          '<img src="32427867677_64da1e1f82_k.jpg" alt="fresh thyme" width="500" height="600"></img>',
-          '<img src="basil-3532424_1920.jpg" alt="Basil on black background" width="500" height="600"></img>',
-          '<img src="mint-2202496_1920.jpg" alt="mint bunch" width="500" height="600"></img>'
+          'oregano_wild_bunch.jpg',
+          'fresh_lemongrass.jpg',
+          'wild_tarragon_2_stems.jpg',
+          'thyme_bundle_white_background.jpg',
+          'basil_on_black_background.jpg',
+          'mint_bundle.jpg'
         ],
-        correctAnswer: '<img src="basil-3532424_1920.jpg" alt="Basil on black background" width="500" height="600"></img>'
+        correctAnswer: 'basil_on_black_background.jpg'
       },
       {
         question: 'Cilantro',
         answers: [
-          '<img src="cilantro-1287301_1920.jpg" alt="bunch of Cilantro" width="500" height="600"></img>',
-          '<img src="sage-leaves-background.jpg" alt="wild sage background" width="500" height="600"></img>',
-          '<img src="1676377622_bc60a434c9_b.jpg" mint" width="500" height="600"></img>',
-          '<img src="oregano-790702_1920.jpg" alt="Wild Oregano" width="500" height="600"></img>',
-          '<img src="30936352597_64958374a4_k.jpg" alt="Parsely close up" width="500" height="600"></img>',
-          '<img src="thyme-2854035_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
+          'cilantro_closeup.jpg',
+          'wild_sage_plant.jpg',
+          'mint_in_a_bowl_kitchen_sink.jpg',
+          'oregano_plant.jpg',
+          'parsley_close_up_from_top.jpg',
+          'fresh_thyme_front_view_closeup.jpg',
         ],
-        correctAnswer: '<img src="cilantro-1287301_1920.jpg" alt="bunch of Cilantro" width="500" height="600"></img>'
+        correctAnswer: 'cilantro_closeup.jpg'
       }, 
       {
         question: 'Fennel',
         answers: [
-          '<img src="9031346136_08e079f996_k.jpg" alt="Cut Cilantro" width="500" height="600"></img>',
-          '<img src="thyme-2854035_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
-          '<img src="sage-4367048_1920.jpg" alt="wild sage bunch" width="500" height="600"></img>',
-          '<img src="fennel-3946005_1920.jpg" alt="Fennel in the ground" width="500" height="600"></img>',
-          '<img src="oregano-790702_1920.jpg" alt="Wild Oregano" width="500" height="600"></img>',
-          '<img src="basil-2919560_1920.jpg" alt="Basil" width="500" height="600"></img>',
+          'cilantro_cut_up.jpg',
+          'fresh_thyme_front_view_closeup.jpg',
+          'sage_bundle.jpg',
+          'fennel.jpg',
+          'oregano_plant.jpg',
+          'basil_bush.jpg',
           
         ],
-          correctAnswer: '<img src="fennel-3946005_1920.jpg" alt="Fennel in the ground" width="500" height="600"></img>'
+          correctAnswer: 'fennel.jpg'
 
         },
         {
             question: 'Scapes',
             answers: [
-              '<img src="oregano-790702_1920.jpg" alt="bunch of oregano" width="500" height="600"></img>',
-              '<img src="lemongrass-4479786_1920.jpg" alt="fresh lemongrass" width="500" height="600"></img>',
-              '<img src="tarragon-115368_1920.jpg" alt="Tarragon wild" width="500" height="600"></img>',
-              '<img src="2590108006_3a716331e3_b.jpg" alt="Scapes" width="500" height="600"></img>',
-              '<img src="mint-2202496_1920.jpg" alt="mint bunch" width="500" height="600"></img>',
-              '<img src="thyme-341930_1920.jpg" alt="fresh thyme" width="500" height="600"></img>',
+              'oregano_wild_bunch.jpg',
+              'fresh_lemongrass.jpg',
+              'wild_tarragon_2_stems.jpg',
+              'garlic_scapes.jpg',
+              'mint_bundle.jpg',
+              'thyme_bush.jpg',
             ],
-            correctAnswer: '<img src="2590108006_3a716331e3_b.jpg" alt="Scapes" width="500" height="600"></img>'
+            correctAnswer: 'garlic_scapes.jpg'
           },
   ];
 //Step two: use functions and objects (triggers)
