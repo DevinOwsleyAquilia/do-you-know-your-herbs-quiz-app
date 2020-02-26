@@ -72,8 +72,7 @@ const STORE = [
           'garlic_scapes_on_black_table.jpg',
           'fresh_thyme_front_view_closeup.jpg',
         ],
-          correctAnswer: 
-          'flat_leaf_parsley.jpg'
+          correctAnswer: 'flat_leaf_parsley.jpg'
       }, 
       {
         question: 'Basil',
@@ -107,8 +106,7 @@ const STORE = [
           'sage_bundle.jpg',
           'fennel.jpg',
           'oregano_plant.jpg',
-          'basil_bush.jpg',
-          
+          'basil_bush.jpg' 
         ],
           correctAnswer: 'fennel.jpg'
 
