@@ -5,17 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Gaegu" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
     <header>
-        <h1>Herbs Quiz</h1>
+        <h1></h1>
     </header>
     <section class="intro">
-        <h2>Something exciting about this quiz</h2>
+        <h2>Can you identify these herbs just by looking at them?</h2>
+        <img src="herbs-photos/variety_of_herbs.jpg" alt="variety_of_herbs" class="images">
         <button>Start</button>
     </section>
+    <section>
+        <ul class="totalQuestions">
+          <li class="sizeMe">Question:
+            <span class="questionNumber">0</span>/10</li>
+          <li class="sizeMe">Score:
+            <span class="score">0</span>
+          </li>
+        </ul>
+      </section>
     <section class="questions">
         <h3 class="question-text">Rosemary</h3>
         <form class="questions-form">
@@ -47,25 +59,13 @@
                 <li>
                     <label class="options-label" for="4">
                         <input class="radio" type="radio" id="4" value="4" name="answer" required>
-                        <img src="herbs-photos/fine_green_fennel.jpg" alt="fine_green_fennel">
+                        <img src="herbs-photos/parsley_close_up_from_top.jpg" alt="parsley_close_up_from_top">
                     </label>
                 </li>
                 <li>
                     <label class="options-label" for="5">
                         <input class="radio" type="radio" id="5" value="5" name="answer" required>
-                        <img src="herbs-photos/tarragon_bunch_1.jpg" alt="tarragon_bunch_1">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="6">
-                        <input class="radio" type="radio" id="6" value="6" name="answer" required>
                         <img src="herbs-photos/mint_in_a_bowl_kitchen_sink.jpg" alt="mint_in_a_bowl_kitchen_sink">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="7">
-                        <input class="radio" type="radio" id="7" value="7" name="answer" required>
-                        <img src="herbs-photos/garlic_scapes_up_close.jpg" alt="garlic_scapes_up_close">
                     </label>
                 </li>
                 <li>
@@ -77,7 +77,7 @@
                 <li>
                     <label class="options-label" for="9">
                         <input class="radio" type="radio" id="9" value="9" name="answer" required>
-                        <img src="herbs-photos/flat_leaf_parsley.jpg" alt="flat_leaf_parsley">
+                        <img src="herbs-photos/fine_green_fennel.jpg" alt="fine_green_fennel">
                     </label>
                 </li>
                 <li>
@@ -90,18 +90,6 @@
                     <label class="options-label" for="11">
                         <input class="radio" type="radio" id="11" value="11" name="answer" required>
                         <img src="herbs-photos/tarragon_3.jpg" alt="tarragon_3">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="12">
-                        <input class="radio" type="radio" id="12" value="12" name="answer" required>
-                        <img src="herbs-photos/cilantro_closeup_on_white_background.jpg" alt="cilantro_closeup_on_white_background">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="13">
-                        <input class="radio" type="radio" id="13" value="13" name="answer" required>
-                        <img src="herbs-photos/sprig_of_fennel.jpg" alt="sprig_of_fennel">
                     </label>
                 </li>
                 <li>
@@ -236,11 +224,11 @@
     </section>
     <section class="feedback">
         <div class="success">
-            <h3>Well done</h3>
+            <h3>Well done!</h3>
         </div>
         <div class="failure">
-            <h3>Wrong Answer</h3>
-            <h4>The correct answer is...</h4>
+            <h3>Oops...Almost but...</h3>
+            <h4>it's actually</h4>
         </div>
         <button>Next Question</button>
     </section>

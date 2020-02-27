@@ -2,14 +2,17 @@
 
 const STORE = [
     {
-        question: 'Rosemary',
+        question: 'Click on the Rosemary',
         answers: [
-          'lemongrass_on_woven_wicker_mat.jpg',
+          'rosemary_bunch.jpg',
+          'oregano_plant_close_up.jpg',
           'thyme_bunch.jpg',
           'cilantro_bunch.jpg',
+          'parsley_close_up_from_top',
+          'mint_in_a_bowl_kitchen_sink.jpg',
+          'basil_plant_closeup.jpg',
           'fine_green_fennel.jpg',
-          'rosemary_bunch.jpg',
-          'oregano_plant_close_up.jpg'
+          'sage_bundle.jpg'
         ],
         correctAnswer: 'rosemary_bunch.jpg'
       },
@@ -125,3 +128,18 @@ const STORE = [
           },
   ];
 //Step two: use functions and objects (triggers)
+
+//variables to store the quiz score and question number information
+let score = 0;
+let questionNumber = 0;
+
+//template to generate each question
+function generateQuestion() {
+  if (questionNumber < STORE.length) {
+    return createThing(questionNumber);
+  } else {
+    $('.questionBox').hide();
+    finalScore();
+    $('.questionNumber').text(10);
+  }
+}

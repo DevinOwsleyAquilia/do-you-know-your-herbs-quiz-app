@@ -1,11 +1,11 @@
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%;
+    border-radius: 1%;
+}
     /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
-    box-sizing: border-box;
     /*reset Chrome user agent styles*/
     -webkit-margin-before: 0px;
     -webkit-margin-after: 0px;
@@ -15,7 +15,6 @@
     -webkit-padding-after: 0px;
     -webkit-padding-start: 0px;
     -webkit-padding-end: 0px;
-}
 
 
 /* -------------------------------------
@@ -23,7 +22,93 @@ General styles (General Module, wrapping around the modules below)
 (the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules below (h2, h3, h4, h5, h6, p, a, ul, li))
 */
 
-body {}
+body {
+    font-family: 'Gaegu' cursive;
+    color: #415d61;
+    background-color: #b3c7bb;
+  }
+
+.header {
+    text-align: center;
+    color: #415d61;
+  }
+
+  .header li {
+    display: inline-block;
+    margin: 1px;
+    list-style: none;
+    font-size: 1;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gaegu' cursive;
+    align-items: center;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3px;
+    border: 0.1em #96a49e solid;
+  }
+
+  .intro,
+  .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  padding: 1px;
+  border: 0.1px #96a49e solid;
+  background-color: #b3c7bb;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5px;
+    padding: 0.5px;
+    cursor: pointer;
+}
+
+.images {
+    margin-bottom: 0.5px;
+    width: 90%;
+    max-width: 240px;
+  }
+
+button {
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+    font-family: 'Gaegu', cursive;
+    font-size: medium;
+    border: 0.1px #96a49e solid;
+    border-radius: 10px;
+    background-color: #96a49e;
+    color: #ffffff;
+  }
+
+.button:hover {
+  background-color: #415d61;
+  color: #021410;
+  border: 0.1px #415d61 solid;
+}
+
+.results {
+    display: block;
+  }
+.feedback, h3 {
+    text-align: center;
+    color: #415d61;
+
+
+}
+
+
 
 
 /* -------------------------------------
@@ -48,7 +133,13 @@ section.questions ul.options li {
 section.questions ul.options li img {
     width: 100%;
     border: 1px solid black;
-
+    border-radius: 10px;
+}
+section ul.totalQuestions {
+    display: inline;
+    font-family: 'Gaegu' cursive;
+    text-align: center;
+    color: #415d61;
 }
 
 /* -------------------------------------
