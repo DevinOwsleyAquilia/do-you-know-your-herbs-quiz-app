@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     border-radius: 1%;
-}
+
     /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
     /*reset Chrome user agent styles*/
     -webkit-margin-before: 0px;
@@ -15,7 +15,7 @@
     -webkit-padding-after: 0px;
     -webkit-padding-start: 0px;
     -webkit-padding-end: 0px;
-
+}
 
 /* -------------------------------------
 General styles (General Module, wrapping around the modules below)
@@ -23,7 +23,8 @@ General styles (General Module, wrapping around the modules below)
 */
 
 body {
-    font-family: 'Gaegu' cursive;
+    font-family: 'Gaegu', cursive;
+    font-size: medium;
     color: #415d61;
     background-color: #b3c7bb;
   }
@@ -72,6 +73,25 @@ label {
     cursor: pointer;
 }
 
+/* HIDE RADIO */
+[type=radio] { 
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* IMAGE STYLES */
+  [type=radio] + img {
+    cursor: pointer;
+  }
+  
+  /* CHECKED STYLES */
+  [type=radio]:checked + img {
+    /* outline: 3px solid #f00; */
+    box-shadow: 0 0 3pt 2pt red;
+  }
+
 .images {
     margin-bottom: 0.5px;
     width: 90%;
@@ -81,11 +101,9 @@ label {
 button {
     margin-left: auto;
     margin-right: auto;
-    height: 50px;
-    width: 120px;
+    padding: 15px 30px;
     cursor: pointer;
-    font-family: 'Gaegu', cursive;
-    font-size: medium;
+    font-size: 20px;
     border: 0.1px #96a49e solid;
     border-radius: 10px;
     background-color: #96a49e;
