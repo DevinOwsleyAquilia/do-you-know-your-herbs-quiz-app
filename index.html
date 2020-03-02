@@ -11,119 +11,122 @@
 </head>
 
 <body>
-    <header>
-        <h1>Test your knowledge! Can you identify these herbs just by looking at them?</h1>
-    </header>
-    <section class="intro">
-        <ul class="totalQuestions">
-            <li class="sizeMe">Question:
-              <span class="questionNumber">0</span>/10</li>
-            <li class="sizeMe">Score:
-              <span class="score">0</span>
-            </li>
-          </ul>
-        <img class="varietyHerbs"src="herbs-photos/lead_background.jpg" alt="variety_of_herbs" class="images">
-        <button>Start</button>
-    </section>
-    <section class="questions">
-        <h3 class="question-text">Rosemary</h3>
-        <form class="questions-form">
-            <ul class="options">
-                <li>
-                    <label class="options-label" for="0">
-                        <input class="radio" type="radio" id="0" value="0" name="answer" required>
-                        <img src="herbs-photos/rosemary_bunch.jpg" alt="rosemary_bunch">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="1">
-                        <input class="radio" type="radio" id="1" value="1" name="answer" required>
-                        <img src="herbs-photos/oregano_plant_close_up.jpg" alt="oregano_plant_close_up">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="2">
-                        <input class="radio" type="radio" id="2" value="2" name="answer" required>
-                        <img src="herbs-photos/thyme_bunch.jpg" alt="thyme_bunch">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="3">
-                        <input class="radio" type="radio" id="3" value="3" name="answer" required>
-                        <img src="herbs-photos/cilantro_bunch.jpg" alt="cilantro_bunch">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="4">
-                        <input class="radio" type="radio" id="4" value="4" name="answer" required>
-                        <img src="herbs-photos/parsley_close_up_from_top.jpg" alt="parsley_close_up_from_top">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="5">
-                        <input class="radio" type="radio" id="5" value="5" name="answer" required>
-                        <img src="herbs-photos/mint_in_a_bowl_kitchen_sink.jpg" alt="mint_in_a_bowl_kitchen_sink">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="8">
-                        <input class="radio" type="radio" id="8" value="8" name="answer" required>
-                        <img src="herbs-photos/basil_plant_closeup.jpg" alt="basil_plant_closeup">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="9">
-                        <input class="radio" type="radio" id="9" value="9" name="answer" required>
-                        <img src="herbs-photos/fine_green_fennel.jpg" alt="fine_green_fennel">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="10">
-                        <input class="radio" type="radio" id="10" value="10" name="answer" required>
-                        <img src="herbs-photos/sage_bundle.jpg" alt="sage_bundle">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="22">
-                        <input class="radio" type="radio" id="22" value="22" name="answer" required>
-                        <img src="herbs-photos/bunch_chives.jpg" alt="bunch_chives">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="33">
-                        <input class="radio" type="radio" id="33" value="33" name="answer" required>
-                        <img src="herbs-photos/lovage.jpg" alt="lovage">
-                    </label>
-                </li>
-                <li>
-                    <label class="options-label" for="33">
-                        <input class="radio" type="radio" id="33" value="33" name="answer" required>
-                        <img src="herbs-photos/fresh_cut_lavender.jpg" alt="lavender">
-                    </label>
-                </li>
-            </ul>
-            <button type="submit">Check Answer</button>
-        </form>
-    </section>
-    <section class="feedback">
-        <div class="success">
-            <h3>Well done!</h3>
-        </div>
-        <div class="failure">
-            <h3>Oops...Almost but...</h3>
-            <h4>it's actually</h4>
-        </div>
-        <button>Next Question</button>
-    </section>
-    <section class="results">
-        <h2>Final Score is</h2>
-        <button>Restart Quiz</button>
-    </section>
+    <main role="main" class="container">
+        <header role="banner" class="header">
+            <h1>Test your knowledge! Can you identify these herbs just by looking at them?</h1>
+            <section class="intro">
+                <ul class="totalQuestions">
+                    <li class="sizeMe">Question:
+                        <span class="questionNumber">0</span>/10</li>
+                    <li class="sizeMe">Score:
+                        <span class="score">0</span>
+                    </li>
+                </ul>
+                <img class="varietyHerbs" src="herbs-photos/lead_background.jpg" alt="variety_of_herbs" class="images">
+                <button>Start</button>
+            </section>
+        </header>
+        <section class="questions">
+            <h3 class="question-text">Rosemary</h3>
+            <form class="questions-form">
+                <ul class="options">
+                    <li>
+                        <label class="options-label" for="0">
+                            <input class="radio" type="radio" id="0" value="0" name="answer" required>
+                            <img src="herbs-photos/rosemary_bunch.jpg" alt="rosemary_bunch">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="options-label" for="1">
+                            <input class="radio" type="radio" id="1" value="1" name="answer" required>
+                            <img src="herbs-photos/oregano_plant_close_up.jpg" alt="oregano_plant_close_up">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="options-label" for="2">
+                            <input class="radio" type="radio" id="2" value="2" name="answer" required>
+                            <img src="herbs-photos/thyme_bunch.jpg" alt="thyme_bunch">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="options-label" for="3">
+                            <input class="radio" type="radio" id="3" value="3" name="answer" required>
+                            <img src="herbs-photos/cilantro_bunch.jpg" alt="cilantro_bunch">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="options-label" for="4">
+                            <input class="radio" type="radio" id="4" value="4" name="answer" required>
+                            <img src="herbs-photos/parsley_close_up_from_top.jpg" alt="parsley_close_up_from_top">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="options-label" for="5">
+                            <input class="radio" type="radio" id="5" value="5" name="answer" required>
+                            <img src="herbs-photos/mint_in_a_bowl_kitchen_sink.jpg" alt="mint_in_a_bowl_kitchen_sink">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="options-label" for="6">
+                            <input class="radio" type="radio" id="6" value="6" name="answer" required>
+                            <img src="herbs-photos/basil_plant_closeup.jpg" alt="basil_plant_closeup">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="options-label" for="7">
+                            <input class="radio" type="radio" id="7" value="7" name="answer" required>
+                            <img src="herbs-photos/fine_green_fennel.jpg" alt="fine_green_fennel">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="options-label" for="8">
+                            <input class="radio" type="radio" id="" value="8" name="answer" required>
+                            <img src="herbs-photos/sage_bundle.jpg" alt="sage_bundle">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="options-label" for="9">
+                            <input class="radio" type="radio" id="9" value="9" name="answer" required>
+                            <img src="herbs-photos/bunch_chives.jpg" alt="bunch_chives">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="options-label" for="10">
+                            <input class="radio" type="radio" id="10" value="10" name="answer" required>
+                            <img src="herbs-photos/lovage.jpg" alt="lovage">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="options-label" for="11">
+                            <input class="radio" type="radio" id="11" value="11" name="answer" required>
+                            <img src="herbs-photos/`" alt="lavender">
+                        </label>
+                    </li>
+                </ul>
+                <button type="submit">Check Answer</button>
+            </form>
+        </section>
+        <section class="feedback">
+            <div class="success">
+                <h3>Well done!</h3>
+            </div>
+            <div class="failure">
+                <h3>Oops...Almost but...</h3>
+                <h4>it's actually</h4>
+            </div>
+            <button>Next Question</button>
+        </section>
+        <section class="results">
+            <h2>Final Score is</h2>
+            <button>Restart Quiz</button>
+        </section>
+    </main>
     <footer>Copyright Devin Owsley-Aquilia 2020</footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 
 </html>
