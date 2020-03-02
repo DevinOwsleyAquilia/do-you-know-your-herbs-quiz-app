@@ -29,15 +29,17 @@ body {
     background-color: #ebc89c;
   }
 
-header h1 {
+  .header {
     text-align: center;
     color: #e7f1f3;
     padding: 30px;
   }
 
   .varietyHerbs {
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 950px;
+    border: 2px white solid;
+    border-radius: 10px;
+    opacity: 80%;
   }
 
   .header li {
@@ -59,7 +61,7 @@ header h1 {
     border: 0.1em #96a49e solid;
   }
 
-  .intro,
+  .start-quiz-box,
   .box {
   display: flex;
   flex-direction: column;
@@ -74,8 +76,8 @@ header h1 {
 
 label {
     display: block;
-    margin-bottom: 0.5px;
-    padding: 0.5px;
+    margin-bottom: 1px;
+    padding: 1px;
     cursor: pointer;
 }
 
