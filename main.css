@@ -72,6 +72,8 @@ body {
   padding: 1px;
   border: 0.1px #96a49e solid;
   background-color: #ebc89c;
+  color: ghostwhite;
+  font-size: large;
 }
 
 label {
@@ -85,6 +87,10 @@ label {
   margin-bottom: 1px;
   width: 90%;
   max-width: 240px;
+}
+
+.h1-bottom {
+  margin-bottom: 30px;;
 }
 
 h1,
@@ -224,10 +230,32 @@ section.intro ul.totalQuestions img.varietyHerbs {
     border: 2px black solid;
 }
 
+section.feedback .success {
+  display: inline;
+  font-family: 'Gaegu' cursive;
+  text-align: center;
+  color: #082913;
+
+}
+
+section.feedback .failure {
+  display: inline;
+  font-family: 'Gaegu' cursive;
+  text-align: center;
+  color: #082913;
+
+}
+
 /* -------------------------------------
 Footer styles (Main Module)
 (all the styles inside the < footer > tag)
 */
+
+footer {
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: center;
+}
 
 
 /* -------------------------------------
