@@ -26,19 +26,25 @@ body {
     font-family: 'Gaegu', cursive;
     font-size: medium;
     color: #415d61;
-    background-color: #b3c7bb;
+    background-color: #ebc89c;
   }
 
-.header {
+header h1 {
     text-align: center;
-    color: #415d61;
+    color: #e7f1f3;
+    padding: 30px;
+  }
+
+  .varietyHerbs {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .header li {
     display: inline-block;
     margin: 1px;
     list-style: none;
-    font-size: 1;
+    font-size: 1px;
   }
 
   .intro {
@@ -63,7 +69,7 @@ body {
   margin: auto;
   padding: 1px;
   border: 0.1px #96a49e solid;
-  background-color: #b3c7bb;
+  background-color: #ebc89c;
 }
 
 label {
@@ -103,6 +109,7 @@ button {
     margin-right: auto;
     padding: 15px 30px;
     cursor: pointer;
+    font-family: 'Gaegu', cursive;
     font-size: 20px;
     border: 0.1px #96a49e solid;
     border-radius: 10px;
@@ -149,7 +156,7 @@ section.questions ul.options li {
     padding: 1%;
 }
 section.questions ul.options li img {
-    width: 100%;
+    max-width: 100%;
     border: 1px solid black;
     border-radius: 10px;
 }
@@ -157,7 +164,22 @@ section ul.totalQuestions {
     display: inline;
     font-family: 'Gaegu' cursive;
     text-align: center;
-    color: #415d61;
+    color: #082913;
+}
+
+section.intro ul.totalQuestions li.sizeMe {
+  display: inline;
+  padding: 70px 100px;
+padding-bottom: 80px;
+  font-size: 18px;
+
+}
+
+section.intro ul.totalQuestions img.varietyHerbs {
+    max-width: 100%;
+    padding: 30px 80px;
+    border-radius: 10px;
+    border: 2px black solid;
 }
 
 /* -------------------------------------

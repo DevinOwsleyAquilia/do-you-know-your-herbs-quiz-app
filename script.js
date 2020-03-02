@@ -1,131 +1,151 @@
 //step one: define functions and objects
-
 const STORE = [
-    {
-        question: 'Click on the Rosemary',
-        answers: [
-          'rosemary_bunch.jpg',
-          'oregano_plant_close_up.jpg',
-          'thyme_bunch.jpg',
-          'cilantro_bunch.jpg',
-          'parsley_close_up_from_top',
-          'mint_in_a_bowl_kitchen_sink.jpg',
-          'basil_plant_closeup.jpg',
-          'fine_green_fennel.jpg',
-          'sage_bundle.jpg'
-        ],
-        correctAnswer: 'rosemary_bunch.jpg'
-      },
-    {
-      question: 'Mint',
+  {
+      question: 'Click on the Rosemary',
       answers: [
-        'tarragon_bunch_1.jpg',
+        'rosemary_bunch.jpg',
+        'oregano_plant_close_up.jpg',
+        'thyme_bunch.jpg',
+        'cilantro_bunch.jpg',
+        'parsley_close_up_from_top',
         'mint_in_a_bowl_kitchen_sink.jpg',
-        'garlic_scapes_up_close.jpg',
-        'basil_plant_closeup.jpg',
-        'flat_leaf_parsley.jpg',
-        'sage_bundle.jpg'
+
       ],
-      correctAnswer: 'mint_in_a_bowl_kitchen_sink.jpg'   
+      correctAnswer: 'rosemary_bunch.jpg'
     },
     {
-      question:
-        'Tarragon',
+      question: 'Click on the Parsley',
       answers: [
-        'tarragon_3.jpg',
-        'cilantro_closeup_on_white_background.jpg',
-        'sprig_of_fennel.jpg',
-        'sage_fan_display.jpg',
-        'basil_on_black_background.jpg',
-        'fresh_lemongrass.jpg'    
-      ],
-      correctAnswer: 'tarragon_3.jpg'
-    },
-    {
-      question: 'Sage',
-      answers: [
-        'mint_bundle.jpg',
+        'oregano_plant_close_up.jpg',
+        'cilantro_bunch.jpg',
+        'parsley_close_up_from_top',
+        'lovage.jpg',
         'sage_bundle.jpg',
-        'wild_tarragon_2_stems.jpg',
-        'oregano_wild_bunch.jpg',
-        'parsley_close_up_from_top.jpg',
-        'fresh_thyme_front_view_closeup.jpg',
+        'basil_plant_closeup.jpg',
+      ],
+      correctAnswer: 'parsley_close_up_from_top'
+    },
+    {
+      question: 'Click on the Thyme',
+      answers: [
+        'fine_green_fennel.jpg',
+        'thyme_bunch.jpg',
+        'mint_in_a_bowl_kitchen_sink.jpg',
+        'sage_bundle.jpg',
+        'bunch_chives.jpg',
+        'fresh_cut_lavender.jpg'
+      ],
+      correctAnswer: 'thyme_bunch.jpg'
+    },
+    {
+      question: 'Click on the Cilantro',
+      answers: [
+        'lovage.jpg',
+        'oregano_plant_close_up.jpg',
+        'thyme_bunch.jpg',
+        'cilantro_bunch.jpg',
+        'fine_green_fennel.jpg',
+        'parsley_close_up_from_top',
+      ],
+      correctAnswer: 'cilantro_bunch.jpg'
+
+    },
+    {
+      question: 'Click on the Oregano',
+      answers: [
+        'rosemary_bunch.jpg',
+        'oregano_plant_close_up.jpg',
+        'thyme_bunch.jpg',
+        'mint_in_a_bowl_kitchen_sink.jpg',
+        'basil_plant_closeup.jpg',
+        'fine_green_fennel.jpg'
+      ],
+      correctAnswer: 'oregano_plant_close_up.jpg'
+    },
+    {
+      question: 'Click on the Mint',
+      answers: [
+        'rosemary_bunch.jpg',
+        'mint_in_a_bowl_kitchen_sink.jpg',
+        'sage_bundle.jpg',
+        'lovage.jpg',
+        'thyme_bunch.jpg',
+        'cilantro_bunch.jpg'
+      ],
+      correctAnswer: 'mint_in_a_bowl_kitchen_sink.jpg'
+    },
+    {
+      question: 'Click on the Basil',
+      answers: [
+        'rosemary_bunch.jpg',
+        'oregano_plant_close_up.jpg',
+        'thyme_bunch.jpg',
+        'cilantro_bunch.jpg',
+        'basil_plant_closeup.jpg',
+        'fine_green_fennel.jpg'
+      ],
+      correctAnswer: 'basil_plant_closeup.jpg'
+    },
+    {
+      question: 'Click on the Lovage',
+      answers: [
+        'rosemary_bunch.jpg',
+        'oregano_plant_close_up.jpg',
+        'thyme_bunch.jpg',
+        'cilantro_bunch.jpg',
+        'sage_bundle.jpg',
+        'lovage.jpg'
+      ],
+      correctAnswer: 'lovage.jpg'
+    },
+    {
+      question: 'Click on the Sage',
+      answers: [
+        'sage_bundle.jpg',
+        'oregano_plant_close_up.jpg',
+        'fresh_cut_lavender.jpg',
+        'thyme_bunch.jpg',
+        'cilantro_bunch.jpg',
+        'fine_green_fennel.jpg'
       ],
       correctAnswer: 'sage_bundle.jpg'
     },
     {
-        question: 'Oregano', 
-        answers: [
-          'sage_bundle.jpg',
-          'wild_tarragon_2_stems.jpg',
-          'mint_bundle.jpg',
-          'oregano_plant.jpg',
-          'garlic_scapes_on_black_table.jpg',
-          'thyme_bush.jpg',
-        ],
-        correctAnswer: 'oregano_plant.jpg'
-      }, 
-      {
-        question: 'Parsley',
-        answers: [
-          'bunch_chives.jpg',
-          'flat_leaf_parsley.jpg',
-          'tarragon_3.jpg',
-          'oregano_wild_bunch.jpg',
-          'garlic_scapes_on_black_table.jpg',
-          'fresh_thyme_front_view_closeup.jpg',
-        ],
-          correctAnswer: 'flat_leaf_parsley.jpg'
-      }, 
-      {
-        question: 'Basil',
-        answers: [
-          'oregano_wild_bunch.jpg',
-          'fresh_lemongrass.jpg',
-          'wild_tarragon_2_stems.jpg',
-          'thyme_bundle_white_background.jpg',
-          'basil_on_black_background.jpg',
-          'mint_bundle.jpg'
-        ],
-        correctAnswer: 'basil_on_black_background.jpg'
-      },
-      {
-        question: 'Cilantro',
-        answers: [
-          'cilantro_closeup.jpg',
-          'wild_sage_plant.jpg',
-          'mint_in_a_bowl_kitchen_sink.jpg',
-          'oregano_plant.jpg',
-          'parsley_close_up_from_top.jpg',
-          'fresh_thyme_front_view_closeup.jpg',
-        ],
-        correctAnswer: 'cilantro_closeup.jpg'
-      }, 
-      {
-        question: 'Fennel',
-        answers: [
-          'cilantro_cut_up.jpg',
-          'fresh_thyme_front_view_closeup.jpg',
-          'sage_bundle.jpg',
-          'fennel.jpg',
-          'oregano_plant.jpg',
-          'basil_bush.jpg' 
-        ],
-          correctAnswer: 'fennel.jpg'
-
-        },
-        {
-            question: 'Scapes',
-            answers: [
-              'oregano_wild_bunch.jpg',
-              'fresh_lemongrass.jpg',
-              'wild_tarragon_2_stems.jpg',
-              'garlic_scapes.jpg',
-              'mint_bundle.jpg',
-              'thyme_bush.jpg',
-            ],
-            correctAnswer: 'garlic_scapes.jpg'
-          },
+      question: 'Click on the Chives',
+      answers: [
+        'oregano_plant_close_up.jpg',
+        'lovage.jpg',
+        'thyme_bunch.jpg',
+        'bunch_chives.jpg',
+        'cilantro_bunch.jpg',
+        'rosemary_bunch.jpg'
+      ],
+      correctAnswer: 'bunch_chives.jpg'
+    },
+    {
+      question: 'Click on the Fennel',
+      answers: [
+        'fresh_cut_lavender.jpg',
+        'oregano_plant_close_up.jpg',
+        'parsley_close_up_from_top',
+        'mint_in_a_bowl_kitchen_sink.jpg',
+        'fine_green_fennel.jpg',
+        'rosemary_bunch.jpg',
+      ],
+      correctAnswer: 'fine_green_fennel.jpg'
+    },
+    {
+      question: 'Click on the Lavender',
+      answers: [
+        'rosemary_bunch.jpg',
+        'lovage.jpg',
+        'fresh_cut_lavender.jpg',
+        'basil_plant_closeup.jpg',
+        'oregano_plant_close_up.jpg',
+        'thyme_bunch.jpg'
+      ],
+      correctAnswer: 'fresh_cut_lavender.jpg'
+    },
   ];
 //Step two: use functions and objects (triggers)
 
