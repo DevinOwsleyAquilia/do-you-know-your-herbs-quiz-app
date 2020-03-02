@@ -81,6 +81,46 @@ label {
     cursor: pointer;
 }
 
+.images {
+  margin-bottom: 1px;
+  width: 90%;
+  max-width: 240px;
+}
+
+h1,
+h3,
+legend {
+  margin-bottom: 1px;
+}
+
+.answerOption {
+  margin-top: 1px;
+}
+
+.button {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  height: auto;
+  cursor: pointer;
+  font-family: 'Gaegu', cursive;
+  text-transform: uppercase;
+  border: 0.1em #96a49e  solid;
+  background-color: #96a49e ;
+  color: #ffffff;
+}
+
+.button:hover,
+.button:active {
+  background-color: #849c91;
+  color: #a7bbb2;
+  border: 0.1em #849c91 solid;
+}
+
+.final {
+  display: block;
+}
+
 /* HIDE RADIO */
 [type=radio] { 
     position: absolute;
