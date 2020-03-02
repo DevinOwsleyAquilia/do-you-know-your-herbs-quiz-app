@@ -26,12 +26,12 @@ body {
     font-family: 'Gaegu', cursive;
     font-size: medium;
     color: #415d61;
-    background-color: #ebc89c;
+    background-color: #e7ceaf;
   }
 
   .header {
     text-align: center;
-    color: #e7f1f3;
+    color: #e7ceaf;
     padding: 30px;
   }
 
@@ -71,7 +71,7 @@ body {
   margin: auto;
   padding: 1px;
   border: 0.1px #96a49e solid;
-  background-color: #ebc89c;
+  background-color: #e7ceaf;
   color: ghostwhite;
   font-size: large;
 }
@@ -204,10 +204,12 @@ section.questions ul.options li {
     padding: 1%;
 }
 section.questions ul.options li img {
-    max-width: 100%;
-    border: 1px solid black;
+    max-width: 400px;
+    max-height: 300px;
+    border: 1px solid whitesmoke;
     border-radius: 10px;
 }
+
 section ul.totalQuestions {
     display: inline;
     font-family: 'Gaegu' cursive;
@@ -218,7 +220,7 @@ section ul.totalQuestions {
 section.intro ul.totalQuestions li.sizeMe {
   display: inline;
   padding: 70px 100px;
-padding-bottom: 80px;
+  padding-bottom: 80px;
   font-size: 18px;
 
 }

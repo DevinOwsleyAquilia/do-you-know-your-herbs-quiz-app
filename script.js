@@ -33,7 +33,7 @@ const STORE = [
         'mint_in_a_bowl_kitchen_sink.jpg',
         'sage_bundle.jpg',
         'bunch_chives.jpg',
-        'fresh_cut_lavender.jpg'
+        'lavender.jpg'
       ],
       correctAnswer: 'thyme_bunch.jpg'
     },
@@ -103,7 +103,7 @@ const STORE = [
       answers: [
         'sage_bundle.jpg',
         'oregano_plant_close_up.jpg',
-        'fresh_cut_lavender.jpg',
+        'lavender.jpg',
         'thyme_bunch.jpg',
         'cilantro_bunch.jpg',
         'fine_green_fennel.jpg'
@@ -125,7 +125,7 @@ const STORE = [
     {
       question: 'Click on the Fennel',
       answers: [
-        'fresh_cut_lavender.jpg',
+        'lavender.jpg',
         'oregano_plant_close_up.jpg',
         'parsley_close_up_from_top',
         'mint_in_a_bowl_kitchen_sink.jpg',
@@ -139,12 +139,12 @@ const STORE = [
       answers: [
         'rosemary_bunch.jpg',
         'lovage.jpg',
-        'fresh_cut_lavender.jpg',
+        'lavender.jpg',
         'basil_plant_closeup.jpg',
         'oregano_plant_close_up.jpg',
         'thyme_bunch.jpg'
       ],
-      correctAnswer: 'fresh_cut_lavender.jpg'
+      correctAnswer: 'lavender.jpg'
     },
   ];
 //Step two: use functions and objects (triggers)
