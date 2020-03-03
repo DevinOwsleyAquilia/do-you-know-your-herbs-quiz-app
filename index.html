@@ -12,25 +12,24 @@
 
 <body>
     <main role="main" class="container">
-        <header role="banner" class="header">
-            <section class="intro">
-                <ul class="totalQuestions">
-                    <li class="sizeMe">Question:
-                        <span class="questionNumber">0</span>/10</li>
-                    <li class="sizeMe">Score:
-                        <span class="score">0</span>
-                    </li>
-                </ul>
-            </section>
+        <header class="header">
+            <h1>Test your knowledge!</h1>
+            <h2>Can you identify these herbs just by looking at them?</h2>
         </header>
+        
         <section role="region" class="start-quiz-box">
-            <h1 class="h1-top">Test your knowledge! </h1>
-            <h1 class="h1-bottom">Can you identify these herbs just by looking at them?</h1>
+            <ul class="totalQuestions">
+                <li class="sizeMe">Question:
+                    <span class="questionNumber">0</span>/10</li>
+                <li class="sizeMe">Score:
+                    <span class="score">0</span>
+                </li>
+            </ul>
             <img class="varietyHerbs" src="herbs-photos/lead_background.jpg" alt="variety_of_herbs" class="images">
-            <button type="button" class="startButton button">Start</button>
-          </section>
+            <button type="button" class="startButton">Start</button>
+        </section>
         <section class="questions">
-            <h3 class="question-text">Rosemary</h3>
+            <h3 class="question-text">Question Text</h3>
             <form class="questions-form">
                 <ul class="options">
                     <li>
@@ -106,7 +105,7 @@
                         </label>
                     </li>
                 </ul>
-                <button type="submit">Check Answer</button>
+                <button type="button" class="submit">Check Answer</button>
             </form>
         </section>
         <section class="feedback">
@@ -117,11 +116,12 @@
                 <h3>Oops...Almost but...</h3>
                 <h4>it's actually</h4>
             </div>
-            <button>Next Question</button>
+            <button type="button" class="nextQuestionButton">Next Question</button>
         </section>
         <section class="results">
             <h2>Final Score is</h2>
-            <button>Restart Quiz</button>
+            <img class="finalImg" src="herbs-photos/tarragon_3.jpg" alt="tarragon" class="images">
+            <button type="button" class="restartQuizButton">Restart Quiz</button>
         </section>
     </main>
     <footer>Copyright Devin Owsley-Aquilia 2020</footer>
