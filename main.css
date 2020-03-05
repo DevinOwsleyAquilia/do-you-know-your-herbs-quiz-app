@@ -35,6 +35,10 @@ body {
     padding: 30px;
   }
 
+  section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .varietyHerbs {
     max-width: 850px;
     margin-bottom: 30px;
@@ -85,7 +89,7 @@ h1 {
 h2,
 h3,
 legend {
-  margin-bottom: 1px;
+  margin-bottom: 20px;
 }
 
 .answerOption {
@@ -98,8 +102,8 @@ legend {
 }
 
 button {
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  margin: 30px auto;
   padding: 15px 30px;
   cursor: pointer;
   font-family: 'Gaegu', cursive;
@@ -110,8 +114,8 @@ button {
   color: #ffffff;
 }
 
-.button:hover,
-.button:active {
+button:hover,
+button:active {
   background-color: #849c91;
   color: #a7bbb2;
   border: 0.1px #849c91 solid;
@@ -172,7 +176,7 @@ section.questions ul.options li {
 section.questions ul.options li img {
     width: 100%;
     max-width: 100px;
-    max-height: 100px;
+    height: 100px;
     border: 1px solid whitesmoke;
     border-radius: 10px;
 }
@@ -182,10 +186,6 @@ section.questions .questions-form {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-
-body button {
-    display: block;
 }
 
 section ul.totalQuestions {
@@ -208,12 +208,17 @@ section.intro ul.totalQuestions img.varietyHerbs {
     border: 2px black solid;
 }
 
-section.feedback .failure {
-  display: inline-block;
+section.feedback .failure,
+section.feedback .success {
+  display: block;
   font-family: 'Gaegu' cursive;
   text-align: center;
   color: #082913;
-
+  border: 1px solid lime;
+  padding: 15px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 section.results {
@@ -261,6 +266,12 @@ Responsive styles
     body {
         color: brown;
     }
+    
+    section.questions ul.options li img {
+      max-width: 300px;
+      height: 150px;
+    }
+
 }
 
 /*iPad potrait*/
@@ -270,7 +281,7 @@ Responsive styles
     }
     section.questions ul.options li img {
       max-width: 400px;
-      max-height: 200px;
+      height: 200px;
     }
 }
 
