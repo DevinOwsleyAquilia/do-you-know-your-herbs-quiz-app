@@ -171,7 +171,7 @@ section.questions ul.options li {
 }
 section.questions ul.options li img {
     max-width: 400px;
-    max-height: auto;
+    max-height: 300px;
     border: 1px solid whitesmoke;
     border-radius: 10px;
 }
@@ -181,7 +181,7 @@ body button {
 }
 
 section ul.totalQuestions {
-    display: inline;
+    display: inline-block;
     font-family: 'Gaegu' cursive;
     text-align: center;
     color: #082913;
@@ -200,17 +200,8 @@ section.intro ul.totalQuestions img.varietyHerbs {
     border: 2px black solid;
 }
 
-
-section.feedback .success {
-  display: inline;
-  font-family: 'Gaegu' cursive;
-  text-align: center;
-  color: #082913;
-
-}
-
 section.feedback .failure {
-  display: inline;
+  display: inline-block;
   font-family: 'Gaegu' cursive;
   text-align: center;
   color: #082913;
