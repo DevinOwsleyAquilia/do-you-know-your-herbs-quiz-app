@@ -170,10 +170,18 @@ section.questions ul.options li {
     padding-left: 1%;
 }
 section.questions ul.options li img {
-    max-width: 400px;
-    max-height: 300px;
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
     border: 1px solid whitesmoke;
     border-radius: 10px;
+}
+
+section.questions .questions-form {
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 body button {
@@ -260,6 +268,10 @@ Responsive styles
     body {
         color: red;
     }
+    section.questions ul.options li img {
+      max-width: 400px;
+      max-height: 200px;
+    }
 }
 
 /*iPad lanscape / small laptop*/
@@ -267,6 +279,8 @@ Responsive styles
     body {
         color: blue;
     }
+    
+
 }
 
 /*large desktop*/
