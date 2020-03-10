@@ -152,14 +152,72 @@ const STORE = [
 //variables to store the quiz score and question number information
 let score = 0;
 let questionNumber = 0;
+let totalNumberOfQuestion = STORE.length;
+let totalNumberOfCorrectAnswers = 0;
 
 //template to generate each question
-function generateQuestion() {
-  if (questionNumber < STORE.length) {
-    return createThing(questionNumber);
-  } else {
-    $('.questionBox').hide();
-    finalScore();
-    $('.questionNumber').text(10);
+function questionDisplay() {
+  $('.question').text(STORE[questionNumber].questionText);
+
+  $('.answers').empty();
+
+  let totalNumberOfChoices = STORE[questionNumber].answers.length;
+  for(let i = 0; i < totalNumberOfChoices; i++) {
+    let buildEachChoiceHTML = "<input type='radio' class='option' name='option' value=" + i + ">" + STORE[questionNumber].questionChoices[i] + "<br>"; 
+    $('.answers').append(buildEachChoiceHTML);
   }
+
+  $('questionNumberDisplay').text("question" + (questionNumber + 1) + "of" + totalNumberOfQuestion)
 }
+
+//functions
+
+$(document).ready(function (){
+  $('.results').hide();
+  $('.questions').hide();
+
+  //start quiz
+  $('.startButton').click(function () {
+    $('.results').hide();
+    $('.start-quiz-box').hide();
+    $('questions').show();
+    $('#result_msg').empty();
+    questionDisplay();
+    });
+
+  //show quiz questions
+  $('.questions').on('click', '.answers', function () {
+    let userAnswer = $("input[class='option']:checked").val();
+    let correctAnswerChoice = STORE[questionNumber].correctAnswer;
+    if (userAnswer == correctAnswerChoice){
+      totalNumberOfCorrectAnswers++;
+      //console.log(totalNumberOfCorrectAnswers);
+    }
+    $('.results').append("<h3>Q: " + STORE[questionNumber].questionText + "</h3>");
+    $('.results').append("<h4>A: " + STORE[questionNumber].correctAnswer + "</h4>");
+
+  //if quiz is finished, show results
+  if ((currentQuestionNumber + 1) == totalNumberOfQuestion) {
+    //show final score
+    $('.results').text(totalNumberOfCorrectAnswers + "/ " + totalNumberOfQuestion);
+
+    //hide other containers
+    $('.questions').hide();
+    $('.start-quiz-box').hide();
+    $('.results').show();
+    } else {
+      questionNumber++;
+      questionDisplay();
+    }
+  });
+
+  //loading start section from result section
+  $('.results').on('click', 'restartQuizButton', function () {
+    $('.start-quiz-box').show();
+    $('.questions').hide();
+    $('.results').hide();
+    questionNumber = 0;
+    totalNumberOfCorrectAnswers = 0;
+  });
+});
+

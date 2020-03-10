@@ -221,6 +221,11 @@ section.feedback .success {
   margin-right: auto;
 }
 
+section.feedback .failure {
+  color: red;
+  border: 1px red solid;
+}
+
 section.results {
   display: block;
   font-family: 'Gaegu' cursive;
