@@ -7,7 +7,7 @@ const STORE = [
         'oregano_plant_close_up.jpg',
         'thyme_bunch.jpg',
         'cilantro_bunch.jpg',
-        'parsley_close_up_from_top',
+        'parsley_close_up_from_top.jpg',
         'mint_in_a_bowl_kitchen_sink.jpg',
 
       ],
@@ -18,12 +18,12 @@ const STORE = [
       answers: [
         'oregano_plant_close_up.jpg',
         'cilantro_bunch.jpg',
-        'parsley_close_up_from_top',
+        'parsley_close_up_from_top.jpg',
         'lovage.jpg',
         'sage_bundle.jpg',
         'basil_plant_closeup.jpg',
       ],
-      correctAnswer: 'parsley_close_up_from_top'
+      correctAnswer: 'parsley_close_up_from_top.jpg'
     },
     {
       question: 'Click on the Thyme',
@@ -45,7 +45,7 @@ const STORE = [
         'thyme_bunch.jpg',
         'cilantro_bunch.jpg',
         'fine_green_fennel.jpg',
-        'parsley_close_up_from_top',
+        'parsley_close_up_from_top.jpg',
       ],
       correctAnswer: 'cilantro_bunch.jpg'
 
@@ -127,7 +127,7 @@ const STORE = [
       answers: [
         'lavender.jpg',
         'oregano_plant_close_up.jpg',
-        'parsley_close_up_from_top',
+        'parsley_close_up_from_top.jpg',
         'mint_in_a_bowl_kitchen_sink.jpg',
         'fine_green_fennel.jpg',
         'rosemary_bunch.jpg',
@@ -151,43 +151,55 @@ const STORE = [
 
 //variables to store the quiz score and question number information
 let score = 0;
-let questionNumber = 0;
+let questionNumber = 11;
 let totalNumberOfQuestion = STORE.length;
 let totalNumberOfCorrectAnswers = 0;
 
 //template to generate each question
 function questionDisplay() {
-  $('.question').text(STORE[questionNumber].questionText);
+  //console.log(STORE[questionNumber].question);
+  $('.question-text').text(STORE[questionNumber].question);
 
-  $('.answers').empty();
+  $('.options').empty();
 
-  let totalNumberOfChoices = STORE[questionNumber].answers.length;
-  for(let i = 0; i < totalNumberOfChoices; i++) {
-    let buildEachChoiceHTML = "<input type='radio' class='option' name='option' value=" + i + ">" + STORE[questionNumber].questionChoices[i] + "<br>"; 
-    $('.answers').append(buildEachChoiceHTML);
+   let totalNumberOfChoices = STORE[questionNumber].answers.length;
+    for(let i = 0; i < totalNumberOfChoices; i++) {
+    let buildEachChoiceHTML = 
+    `<li>
+    <label class="options-label" for="0">
+        <input class="radio" type="radio" id="0" value="0" name="answer" required="">
+        <img src="herbs-photos/${STORE[questionNumber].answers[i]}" alt="select_img">
+    </label>
+    </li>`; 
+    $('.options').append(buildEachChoiceHTML);
   }
-
-  $('questionNumberDisplay').text("question" + (questionNumber + 1) + "of" + totalNumberOfQuestion)
+  $('.totalQuestions').show();
+ $('.questionNumber').text(questionNumber + 1)
 }
 
 //functions
 
 $(document).ready(function (){
+  //when the page loads, do this
   $('.results').hide();
   $('.questions').hide();
+  $('.feedback').hide();
+  $('.totalQuestions').hide();
 
   //start quiz
   $('.startButton').click(function () {
     $('.results').hide();
     $('.start-quiz-box').hide();
-    $('questions').show();
+    $('.questions').show();
     $('#result_msg').empty();
     questionDisplay();
     });
 
   //show quiz questions
-  $('.questions').on('click', '.answers', function () {
+  $('.questions-form').on('submit', function (event) {
+    event.preventDefault();
     let userAnswer = $("input[class='option']:checked").val();
+    console.log(userAnswer);
     let correctAnswerChoice = STORE[questionNumber].correctAnswer;
     if (userAnswer == correctAnswerChoice){
       totalNumberOfCorrectAnswers++;
