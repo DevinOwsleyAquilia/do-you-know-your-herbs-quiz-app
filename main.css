@@ -90,6 +90,7 @@ h2,
 h3,
 legend {
   margin-bottom: 20px;
+  color: white;
 }
 
 .answerOption {
@@ -135,20 +136,20 @@ button:active {
 }
 
 /* HIDE RADIO */
-[type=radio] { 
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-  
+ /* .questions input[type=radio] { 
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}  */
+
   /* IMAGE STYLES */
-  [type=radio] + img {
+  .questions input[type=radio] + img {
     cursor: pointer;
   }
   
   /* CHECKED STYLES */
-  [type=radio]:checked + img {
+  .questions input[type=radio]:checked + img {
     /* outline: 3px solid #f00; */
     box-shadow: 0 0 3pt 2pt red;
   }
@@ -186,10 +187,13 @@ section.questions .questions-form {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  padding: 30px 30px;
+  background-color: #f0dac0;
 }
 
 section ul.totalQuestions {
     display: block;
+    padding-bottom: 25px;
     font-family: 'Gaegu' cursive;
     text-align: center;
     color: #082913;
